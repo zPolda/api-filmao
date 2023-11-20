@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" (click)="sidenav.toggle()" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span routerLink="">Filmao</span>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+  <mat-sidenav-container class="container">
+    <mat-sidenav #sidenav [opened]="true" mode="side">
+      <mat-nav-list>
+        <a mat-list-item routerLink="">
+          <div class="item">
+            <mat-icon class="icon"> list </mat-icon>
+            <span> Listar Filmes </span>
+          </div>
+        </a>
+        <a mat-list-item routerLink="pages/filmes/filmes-cadastrar">
+          <div class="item">
+            <mat-icon class="icon"> add </mat-icon>
+            <span> Cadastrar Filme </span>
+          </div>
+        </a>
+      </mat-nav-list>
+      <!-- <a routerLink="/pages/produto/cadastrar"> Cadastrar </a> -->
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+      <!-- Conteúdo -->
+      <router-outlet> </router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

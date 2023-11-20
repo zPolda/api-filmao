@@ -1,0 +1,42 @@
+<div class="card">
+  <mat-card class="example-card" *ngFor="let filme of filmes; let i = index">
+    <mat-card-header>
+      <mat-card-subtitle>{{ filme.titulo }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>id: {{filme.id}}</p>
+      <p>Gênero: {{ filme.genero }}</p>
+      <p>Duração: {{ filme.duracao }} minutos</p>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+    <mat-card-actions>
+      <!-- Passando o índice 'i' para a função toggleMaisInformacoes -->
+      <button (click)="toggleMaisInformacoes(i)" mat-button>Comentários</button>
+      <button (click)="toggleMaisAvaliacoes(i)" mat-button>Avaliações</button>
+      <button (click)="deletar(filme.id)"mat-button>Excluir</button>
+      <button mat-button>Editar</button>
+
+    </mat-card-actions>
+    
+
+    <!-- Mostrando comentários quando o botão 'Comentários' é clicado -->
+    <div *ngIf="mostrarMaisInformacoes[i]">
+      <mat-card-content *ngFor="let comentario of filme.comentarios">
+        <p>Conteúdo: {{ comentario.conteudo }}</p>
+        <p>Nome do Usuário: {{ comentario.nomeUsuario }}</p>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+    </div>
+
+    <div *ngIf="mostrarMaisAvaliacoes[i]">
+      <mat-card-content *ngFor="let avaliacao of filme.avaliacoes">
+        <p>Nota: {{ avaliacao.nota }}</p>
+        <p>Nome do Usuário: {{ avaliacao.nomeUsuario }}</p>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+      <p class="pading">Média das Avaliações: {{ calcularMediaAvaliacoes(filme) }}</p>
+    </div>
+    <mat-card-footer>
+    </mat-card-footer>
+  </mat-card>
+</div>

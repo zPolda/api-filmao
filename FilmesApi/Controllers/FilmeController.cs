@@ -29,6 +29,7 @@ namespace FilmesAPI.Controllers
         /// <returns>IActionResult</returns>
         /// <response code="201">Caso inserção seja feita com sucesso</response>
         [HttpPost]
+        [Route("cadastrar")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         public IActionResult AdicionaFilme([FromBody] CreateFilmeDto filmeDto)
         {

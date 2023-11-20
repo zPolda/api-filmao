@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lucas M\\Documents\\GitHub\\api-filmao\\FilmesAPI\\FilmesAPI.csproj": {}
+    "C:\\Users\\Lucas M\\Documents\\GitHub\\api-filmao\\FilmesApi\\FilmesAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lucas M\\Documents\\GitHub\\api-filmao\\FilmesAPI\\FilmesAPI.csproj": {
+    "C:\\Users\\Lucas M\\Documents\\GitHub\\api-filmao\\FilmesApi\\FilmesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucas M\\Documents\\GitHub\\api-filmao\\FilmesAPI\\FilmesAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Lucas M\\Documents\\GitHub\\api-filmao\\FilmesApi\\FilmesAPI.csproj",
         "projectName": "FilmesAPI",
-        "projectPath": "C:\\Users\\Lucas M\\Documents\\GitHub\\api-filmao\\FilmesAPI\\FilmesAPI.csproj",
+        "projectPath": "C:\\Users\\Lucas M\\Documents\\GitHub\\api-filmao\\FilmesApi\\FilmesAPI.csproj",
         "packagesPath": "C:\\Users\\Lucas M\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucas M\\Documents\\GitHub\\api-filmao\\FilmesAPI\\obj\\",
+        "outputPath": "C:\\Users\\Lucas M\\Documents\\GitHub\\api-filmao\\FilmesApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lucas M\\AppData\\Roaming\\NuGet\\NuGet.Config",
